@@ -71,3 +71,7 @@ C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNE
 C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\obj\Debug\net8.0\RestWithASPNET.sourcelink.json
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Asp.Versioning.Http.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Asp.Versioning.Mvc.dll

@@ -13,6 +13,9 @@ builder.Services.AddDbContext<MySQLContext>(options => options.UseMySql(
     new MySqlServerVersion(new Version(8, 0, 2)) // verificar a versão do pomelo no restwithaspnet.csproj
 ));
 
+// versioning API
+builder.Services.AddApiVersioning();
+
 // dependency inject
 builder.Services.AddScoped<IPersonService, PersonServiceImplementation>();
 
