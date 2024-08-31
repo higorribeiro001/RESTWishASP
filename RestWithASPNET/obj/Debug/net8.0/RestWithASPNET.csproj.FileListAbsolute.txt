@@ -75,3 +75,14 @@ C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNE
 C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
 C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Asp.Versioning.Http.dll
 C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Evolve.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Serilog.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Serilog.Sinks.File.dll
