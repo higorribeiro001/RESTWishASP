@@ -7,9 +7,9 @@ namespace RestWithASPNET.Business.Implementations
 {
     public class PersonBusinessImplementation : IPersonBusiness // vai implementar os metodos desta class
     {
-        public readonly IPersonRepository _repository; // quem vai acessar diretamente no contexto com mysql é o repository
+        public readonly IRepository<Person> _repository; // quem vai acessar diretamente no contexto com mysql é o repository
 
-        public PersonBusinessImplementation(IPersonRepository repository)
+        public PersonBusinessImplementation(IRepository<Person> repository)
         {
             _repository = repository;
         }
