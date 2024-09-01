@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using RestWithASPNET.Model;
 using RestWithASPNET.Business;
 using Asp.Versioning;
+using RestWithASPNET.Data.VO;
 
 namespace RestCalculator.Controllers
 {
@@ -35,14 +36,14 @@ namespace RestCalculator.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Person person) // vai pegar de body e converter para person
+        public IActionResult Post([FromBody] PersonVO person) // vai pegar de body e converter para person
         {
             if (person == null) return BadRequest();
             return Ok(_personBusiness.Create(person));
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] Person person) // vai pegar de body e converter para person
+        public IActionResult Put([FromBody] PersonVO person) // vai pegar de body e converter para person
         {
             if (person == null) return BadRequest();
             return Ok(_personBusiness.Update(person));
