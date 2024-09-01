@@ -7,6 +7,7 @@ using EvolveDb;
 using Serilog;
 using MySqlConnector;
 using RestWithASPNET.Repository.Generic;
+using System.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,16 @@ if (builder.Environment.IsDevelopment())
 {
     MigrateDatabase(connection);
 }
+
+
+// procurar depois como resolver
+// builder.Services.AddMvc(options => 
+// {
+//     options.RespectBrowserAcceptHeader = true; // para aceitar o que vier setado no cabeçalho da request
+//     options.FormatterMappings.SetMediaTypeMappingForFormat("xml", MediaTypeHeaderValue.Parse("application/xml"));
+//     options.FormatterMappings.SetMediaTypeMappingForFormat("json", MediaTypeHeaderValue.Parse("application/json"));
+// })
+// .AddXmlSerializerFormatters();
 
 // versioning API
 builder.Services.AddApiVersioning();
