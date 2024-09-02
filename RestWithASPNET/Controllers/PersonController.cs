@@ -3,6 +3,7 @@ using RestWithASPNET.Model;
 using RestWithASPNET.Business;
 using Asp.Versioning;
 using RestWithASPNET.Data.VO;
+using RestWithASPNET.Hypermedia.Filters;
 
 namespace RestCalculator.Controllers
 {
@@ -22,12 +23,14 @@ namespace RestCalculator.Controllers
         }
 
         [HttpGet]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Get()
         {
             return Ok(_personBusiness.FindAll());
         }
 
         [HttpGet("{id}")]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Get(long id)
         {
             var person = _personBusiness.FindByID(id);
@@ -36,6 +39,7 @@ namespace RestCalculator.Controllers
         }
 
         [HttpPost]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Post([FromBody] PersonVO person) // vai pegar de body e converter para person
         {
             if (person == null) return BadRequest();
@@ -43,6 +47,7 @@ namespace RestCalculator.Controllers
         }
 
         [HttpPut]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Put([FromBody] PersonVO person) // vai pegar de body e converter para person
         {
             if (person == null) return BadRequest();

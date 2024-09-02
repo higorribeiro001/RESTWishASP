@@ -8,6 +8,8 @@ using Serilog;
 using MySqlConnector;
 using RestWithASPNET.Repository.Generic;
 using System.Net.Http.Headers;
+using RestWithASPNET.Hypermedia.Filters;
+using RestWithASPNET.Hypermedia.Enricher;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +36,12 @@ if (builder.Environment.IsDevelopment())
 // })
 // .AddXmlSerializerFormatters();
 
+var filterOptions = new HyperMediaFilterOptions();
+filterOptions.ContentResponseEnricherList.Add(new PersonEnricher());
+filterOptions.ContentResponseEnricherList.Add(new BookEnricher());
+
+builder.Services.AddSingleton(filterOptions);
+
 // versioning API
 builder.Services.AddApiVersioning();
 
@@ -51,6 +59,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 
 app.MapControllers();
+app.MapControllerRoute("DefaultApi", "{controller=values}/v{version=apiVersion}/{id?}");
 
 app.Run();
 
