@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using RestWithASPNET.Business;
 using Asp.Versioning;
 using RestWithASPNET.Data.VO;
+using RestWithASPNET.Hypermedia.Filters;
 
 namespace RestCalculator.Controllers
 {
@@ -21,12 +22,22 @@ namespace RestCalculator.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType((200), Type = typeof(List<PersonVO>))]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Get()
         {
             return Ok(_bookBusiness.FindAll());
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType((200), Type = typeof(PersonVO))]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Get(long id)
         {
             var book = _bookBusiness.FindByID(id);
@@ -35,6 +46,10 @@ namespace RestCalculator.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType((200), Type = typeof(PersonVO))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Post([FromBody] BookVO book) // vai pegar de body e converter para book
         {
             if (book == null) return BadRequest();
@@ -42,6 +57,10 @@ namespace RestCalculator.Controllers
         }
 
         [HttpPut]
+        [ProducesResponseType((200), Type = typeof(PersonVO))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Put([FromBody] BookVO book) // vai pegar de body e converter para book
         {
             if (book == null) return BadRequest();
@@ -49,6 +68,9 @@ namespace RestCalculator.Controllers
         }
 
         [HttpDelete("{id}")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         public IActionResult Delete(long id)
         {
             _bookBusiness.Delete(id);

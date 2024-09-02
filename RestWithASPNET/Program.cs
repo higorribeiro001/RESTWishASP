@@ -10,10 +10,30 @@ using RestWithASPNET.Repository.Generic;
 using System.Net.Http.Headers;
 using RestWithASPNET.Hypermedia.Filters;
 using RestWithASPNET.Hypermedia.Enricher;
+using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Rewrite;
 
 var builder = WebApplication.CreateBuilder(args);
+var appName = "REST API's RESTful From 0 to Azure with ASP .NET Core 8 and Docker";
+var appVersion = "v1";
+var appDescription = $"REST API RESTful developed in course '{appName}'";
 
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
 builder.Services.AddControllers();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c => {
+    c.SwaggerDoc(appVersion,
+    new OpenApiInfo {
+        Title = appName,
+        Version = appVersion,
+        Description = appDescription,
+        Contact = new OpenApiContact{
+            Name = "Higor Ribeiro Araujo",
+            Url = new Uri("https://github.com/higorribeiro001/RESTWishASP")
+        }
+    });
+});
 
 var connection = builder.Configuration["MySQLConnection:MySQLConnectionString"];
 builder.Services.AddDbContext<MySQLContext>(options => options.UseMySql(
@@ -55,6 +75,19 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 var app = builder.Build();
 
 app.UseHttpsRedirection();
+
+app.UseSwagger(); // gera o json da aplicação
+
+app.UseSwaggerUI(c => {
+    c.SwaggerEndpoint(
+        "/swagger/v1/swagger.json",
+        $"{appName} - {appVersion}"
+    );
+}); // gera a pagina HTML
+
+var option = new RewriteOptions();
+option.AddRedirect("^$", "swagger");
+app.UseRewriter(option);
 
 app.UseAuthentication();
 
