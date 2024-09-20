@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\RestWithASPNET.csproj": {}
+    "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\RestWithASPNET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\RestWithASPNET.csproj": {
+    "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\RestWithASPNET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\RestWithASPNET.csproj",
+        "projectUniqueName": "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\RestWithASPNET.csproj",
         "projectName": "RestWithASPNET",
-        "projectPath": "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\RestWithASPNET.csproj",
+        "projectPath": "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\RestWithASPNET.csproj",
         "packagesPath": "C:\\Users\\Higor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\obj\\",
+        "outputPath": "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Higor\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Higor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +53,10 @@
             "Evolve": {
               "target": "Package",
               "version": "[3.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
