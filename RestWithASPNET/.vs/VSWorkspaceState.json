@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Data",
+    "\\Data\\VO",
+    "\\db",
+    "\\db\\migrations",
+    "\\Model",
+    "\\Repository"
+  ],
+  "SelectedNode": "\\Data\\VO\\PersonVO.cs",
+  "PreviewInSolutionExplorer": false
+}
