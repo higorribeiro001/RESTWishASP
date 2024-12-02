@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\RestWithASPNET.csproj": {}
+    "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\RestWithASPNET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\RestWithASPNET.csproj": {
+    "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\RestWithASPNET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\RestWithASPNET.csproj",
+        "projectUniqueName": "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\RestWithASPNET.csproj",
         "projectName": "RestWithASPNET",
-        "projectPath": "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\RestWithASPNET.csproj",
+        "projectPath": "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\RestWithASPNET.csproj",
         "packagesPath": "C:\\Users\\Higor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Higor\\Documents\\Curso ASP .NET\\RESTWishASP\\RestWithASPNET\\obj\\",
+        "outputPath": "C:\\Users\\Higor\\Documents\\curso de ASP.net + ReactJs\\RestWithASPNET\\RestWithASPNET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Higor\\AppData\\Roaming\\NuGet\\NuGet.Config",

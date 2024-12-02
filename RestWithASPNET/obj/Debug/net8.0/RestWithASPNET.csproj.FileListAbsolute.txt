@@ -175,3 +175,4 @@ C:\Users\Higor\Documents\Curso ASP .NET\RESTWishASP\RESTWithASPNET\obj\Debug\net
 C:\Users\Higor\Documents\Curso ASP .NET\RESTWishASP\RESTWithASPNET\obj\Debug\net8.0\RestWith.BF0436F0.Up2Date
 C:\Users\Higor\Documents\Curso ASP .NET\RESTWishASP\RESTWithASPNET\obj\Debug\net8.0\RestWithASPNET.genruntimeconfig.cache
 C:\Users\Higor\Documents\Curso ASP .NET\RESTWishASP\RESTWithASPNET\obj\Debug\net8.0\ref\RestWithASPNET.dll
+C:\Users\Higor\Documents\curso de ASP.net + ReactJs\RestWithASPNET\RestWithASPNET\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

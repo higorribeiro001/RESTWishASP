@@ -5,7 +5,7 @@ namespace RestWithASPNET.Repository.Generic
 {
     public class GenericRepository<T> : IRepository<T> where T : BaseEntity
     {
-        private MySQLContext _context;
+        protected MySQLContext _context;
 
         private DbSet<T> dataset;
 
@@ -83,6 +83,26 @@ namespace RestWithASPNET.Repository.Generic
         public bool Exists(long id)
         {
             return dataset.Any(p => p.Id.Equals(id));
+        }
+
+        public List<T> FindWithPagedSearch(string query)
+        {
+            return dataset.FromSqlRaw<T>(query).ToList();
+        }
+
+        public int GetCount(string query)
+        {
+            var result = "";
+            using (var connection = _context.Database.GetDbConnection())
+            {
+                connection.Open();
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = query;
+                    result = command.ExecuteScalar().ToString();
+                }
+            } // vai retornar um count da string q nos foi passada
+            return int.Parse(result);
         }
     }
 }
